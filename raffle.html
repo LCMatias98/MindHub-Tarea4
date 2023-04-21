@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daflogui Cake | raffle</title>
+    <link rel="shortcut icon" href="./Imagenes/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="ContainerNav">
+            <div class="DivContainer">
+                <a href="index.html">Home</a>
+                <a href="./aboutUs.html">About Us</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./information.html">Information</a>
+                <a href="./benefitsTips.html">Benefits Tips</a>
+                <a href="#">Raffle</a>
+            </div>
+            <img src="Imagenes/icon.png" alt="Logo">
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="titleraffle">You can participate in a raffle. The prize is a coffee pot.</h2>
+        <div class="raffle">
+            <div class="imagesraffle">
+                <img src="./Imagenes/heart-coffee.jpg" alt="heart-coffee">
+                <img src="./Imagenes/cup-w-coffee.jpg" alt="cup-w-coffee">   
+            </div>
+            <div class="DivForm">
+                <form action="./show_data.html" method="get">
+                        <label class="label-name" for="name" >First Name</label>
+                        <input  class="label-name" type="text" id="name" name="nombre" placeholder="First Name">
+                    
+                        <label  class="label-name" for="surname">Last Name:</label>
+                        <input  class="label-name" type="text" id="surname" name="apellido" placeholder="Last Name">
+
+                        <label for="correo">Email</label>
+                        <input type="email" name="email" id="correo" placeholder="Email">
+                
+                   
+                        <label for="color">What color would you like the coffe pot:</label>
+                        <select name="Color-Seleccionado" id="color">
+                            <option value=" ">selec</option>
+                            <option>Black</option>
+                            <option>Red</option>
+                            <option>Metallic Gray</option>
+                            <option>Orange</option>
+                            <option>White</option>
+                        </select>
+
+                        <label for="Country">Country:</label>
+                        <select name="Pais-Seleccionado" id="Country">
+                            <option value=" ">selec</option>
+                            <option>Argentina</option>
+                            <option>Uruguay</option>
+                            <option>Colombia</option>
+                            <option>Chile</option>
+                            <option>Brasil</option>
+                        </select>
+                    
+                        <label for="cash">Payment Options</label>
+                        <div class="divformradio">
+                            <label for="cash">Cash</label>
+                            <input type="radio" name="payment" id="cash" value="cash">
+                        </div>
+                       
+                        <div class="divformradio">
+                            <label for="credit-card">Credit Card</label>
+                            <input type="radio" name="payment" id="credit-card" value="credit">
+                        </div>
+                        <div class="divformradio">
+                            <label for="debit-card">Debit Card</label>
+                        <input type="radio" name="payment" id="debit-card" value="debit">
+                        </div>
+                  
+                            <label for="coment">Services</label>
+                            <textarea name="comentario" id="coment" cols="20" rows="3" ></textarea>
+                    
+                       
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225470.97936898767!2d-82.61909436018843!3d27.994384302166438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sTampa%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1682010203647!5m2!1ses!2sar" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+</body>
